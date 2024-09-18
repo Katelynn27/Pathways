@@ -114,14 +114,17 @@ header {
 
 /* Form styles */
 .signup-form {
-    position:fixed;
+    position: fixed;
+    top: calc(80px + 10vh); /* Adjust 50px based on the header height and 10vh to center the form */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(244, 236, 220, 0.8);
-    padding: 30px 30px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    
+    z-index: 1000;
 }
 
 .signup-form h2 {
