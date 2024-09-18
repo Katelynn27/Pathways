@@ -32,7 +32,7 @@ header {
 }
 
 .header-image img {
-    max-height: 150px; /* Adjust as needed */
+    max-height: 250px; /* Adjust as needed */
     max-width: 100%;   /* Ensure the image scales with the container */
     display: block;    /* Ensure the image is treated as a block-level element */
 }
