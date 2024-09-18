@@ -131,7 +131,7 @@ header {
 .signup-form h2 {
     color: #0B2236;
     margin-bottom: 20px;
-    align-items: center;
+    text-align: center;
 }
 
 .form-group {
