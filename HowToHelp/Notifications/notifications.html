@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Involved - Sign Up for Notifications</title>
+    <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <a href="home.html" class="Logo">
+                <img src="../Logos/LogoHorizontal_Transparent.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Who We Are
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../WhoWeAre/Mission/mission.html">Our Mission</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">The Latest
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../TheLatest/articles.html">Articles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">How You Can Help
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../HowToHelp/SupplyDrives/supplyDrives.html">Supply Drives</a>
+                    <a href="../HowToHelp/Notifications/notifications.html">Stay Involved</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Resources
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../Resources/Events/events.html">Calendar</a>
+                    <a href="../Resources/Learning/learning.html">Learning Modules</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../HowToHelp/Notifications/notifications.html" class="dropbtn no-dropdown">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="signup-form">
+            <h2>Sign Up for Notifications</h2>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to receive emails and notifications from the organization.</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
