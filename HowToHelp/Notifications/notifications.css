@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Lora', serif;
     color: #0B2236;
-    background-image: url('../Tutoring2.jpg');
+    background-image: url('../../Tutoring2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
