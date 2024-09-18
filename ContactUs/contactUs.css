@@ -1,24 +1,21 @@
 /* Global styles */
 body {
   font-family: 'Lora', serif;
-  background-color: #F4ECDC;
   color: #0B2236;
   margin: 0;
-  padding: 0; /* Removed padding to avoid issues */
-  display: flex;
-  flex-direction: column; /* Align items vertically */
-  justify-content: flex-start;
-  align-items: center;
+  padding: 0;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-image: url('../Tutoring2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-
 header {
-  width: 100%; /* Make sure header takes full width */
+  width: 100%;
   position: sticky;
   top: 0;
-  background-color: #F4ECDC;
+  background-color: rgba(244, 236, 220, 0.9);
   z-index: 1000;
   padding: 10px 0px;
   display: flex;
@@ -27,72 +24,55 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Header text */
 .header-image {
   float: left;
 }
 
-
 .header-image img {
-  max-height: 150px; /* Adjust as needed */
-  max-width: 100%;   /* Ensure the image scales with the container */
-  display: block;    /* Ensure the image is treated as a block-level element */
+  max-height: 150px;
+  max-width: 100%;
+  display: block;
 }
 
-
-
-
-/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  clear: both; /* Ensure nothing floats around the navbar */
+  clear: both;
 }
 
-
-/* Dropdown Containers */
 .dropdown {
-  display: inline-block; /* Ensure dropdowns are aligned horizontally */
-  position: relative; /* Position dropdown content relative to the button */
+  display: inline-block;
+  position: relative;
 }
 
-
-/* Dropdown Button */
 .dropbtn {
   font-family: "Lora", serif;
   font-size: 22px;
-  background-color: transparent; /* Match background */
+  background-color: transparent;
   color: #0B2236;
-  padding: 10px 16px; /* Adjust padding for design */
+  padding: 10px 16px;
   border: none;
   cursor: pointer;
-  display: inline-block; /* Aligns button horizontally */
+  display: inline-block;
 }
 
-
-/* Dropdown Content */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Position content directly below the button */
-  left: 0; /* Align content to the left of the button */
-  background-color: #F4ECDC;
-  border: 1px solid #e0d8c9; /* Subtle border */
-  white-space: nowrap; /*makes sure the text does not wrap so dropdown is automatically the length of the longest line */
+  top: 100%;
+  left: 0;
+  background-color: rgba(244, 236, 220, 0.9);
+  border: 1px solid #e0d8c9;
+  white-space: nowrap;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-
-/* Show Dropdown on Hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
-/* Dropdown Links */
 .dropdown-content a {
   color: #0B2236;
   font-size: 18px;
@@ -101,31 +81,82 @@ header {
   display: block;
 }
 
-
-/* Hover Effects  for drop down links*/
 .dropdown-content a:hover, .navbar .dropbtn:hover {
-  background-color: #E8DEC7; /* Slightly darker on hover */
+  background-color: rgba(232, 222, 199, 0.9);
 }
-
-
-.hidden {
-  display: none;
-}
-
 
 .no-dropdown {
   text-decoration: none;
   font-family: "Lora", serif;
   font-size: 22px;
-  background-color: transparent; /* Match background */
-  color: #0B2236; /* Same color as other navbar buttons */
-  padding: 10px 16px; /* Adjust padding for design */
+  background-color: transparent;
+  color: #0B2236;
+  padding: 10px 16px;
   border: none;
   cursor: pointer;
-  display: inline-block; /* Aligns button horizontally */
+  display: inline-block;
 }
 
-
 .no-dropdown:hover {
-  background-color: #E8DEC7; /* Slightly darker on hover */
+  background-color: rgba(232, 222, 199, 0.9);
+}
+
+/* Contact form styles */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(253, 248, 240, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0B2236;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #0B2236;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #5F9EA0;
+  border-radius: 4px;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: #5F9EA0;
+  color: #FDF8F0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Lora', serif;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #4A7F80;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #0B2236;
+  text-align: center;
 }

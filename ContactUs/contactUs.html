@@ -1,55 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>The Pathway to Possibilities Foundation</title>
-   <link rel="stylesheet" type="text/css" href="contactUs.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css">
 </head>
 <body>
-   <header>
-       <div class="header-image">
-         <a href="../index.html" class="Logo">
-           <img src="../../NavbarLogo.png" alt="The Pathway to Possibilities Foundation Logo">
-         </a>
-       </div>
-       <nav class="navbar">
-           <div class="dropdown">
-               <button class="dropbtn">Who We Are
-                 <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="dropdown-content">
-                 <a href="../WhoWeAre/Mission/mission.html">Our Mission</a>
-               </div>
-           </div>
-           <div class="dropdown">
-               <button class="dropbtn">The Latest
-                 <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="dropdown-content">
-                 <a href="../TheLatest/articles.html">Articles</a>
-               </div>
-           </div>
-           <div class="dropdown">
-               <button class="dropbtn">How You Can Help
-                 <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="dropdown-content">
-                 <a href="../HowToHelp/SupplyDrives/supplyDrives.html">Supply Drives</a>
-                 <a href="../HowToHelp/Notifications/notifications.html">Stay Involved</a>
-               </div>
-           </div>
-           <div class="dropdown">
-               <button class="dropbtn">Resources
-                 <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="dropdown-content">
-                 <a href="../Resources/Events/events.html">Calendar</a>
-                 <a href="../Resources/Learning/learning.html">Learning Modules</a>
-               </div>
-           </div>
-           <div class="dropdown">
-             <a href="contactUs.html" class="dropbtn no-dropdown">Contact Us</a>
-         </div>
-       </nav>
-   </header>
-   </body>
+    <header>
+        <div class="header-image">
+            <a href="index.html" class="Logo">
+                <img src="../NavbarLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Who We Are
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../WhoWeAre/Mission/mission.html">Our Mission</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">The Latest
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../TheLatest/articles.html">Articles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">How You Can Help
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../HowToHelp/SupplyDrives/supplyDrives.html">Supply Drives</a>
+                    <a href="../HowToHelp/Notifications/notifications.html">Stay Involved</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Resources
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../Resources/Events/events.html">Calendar</a>
+                    <a href="../Resources/Learning/learning.html">Learning Modules</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../HowToHelp/Notifications/notifications.html" class="dropbtn no-dropdown">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="disclaimer">
+            <p>By submitting this form, you agree to our communication policy. We respect your privacy and will only use your information to respond to your inquiry. Please note that while we strive to respond to all messages promptly, it may take up to 2-3 business days for us to get back to you.</p>
+        </div>
+    </div>
+
+    <script src="contactUs.js"></script>
+</body>
 </html>
