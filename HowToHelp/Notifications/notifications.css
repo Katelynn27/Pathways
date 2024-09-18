@@ -114,18 +114,20 @@ header {
 
 /* Form styles */
 .signup-form {
+    position:fixed;
     background-color: rgba(244, 236, 220, 0.8);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    position:fixed;
+    
 }
 
 .signup-form h2 {
     color: #0B2236;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .form-group {
