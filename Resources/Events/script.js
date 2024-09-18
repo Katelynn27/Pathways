@@ -1,25 +1,11 @@
 let currentDate = new Date();
 let events = [
     {
-        name: "Board Meeting",
-        date: "2024-09-15",
+        name: "First Article Release",
+        date: "2024-09-21",
         time: "10:00",
-        location: "Conference Room A",
-        description: "Quarterly board meeting to discuss company performance."
-    },
-    {
-        name: "Project Deadline",
-        date: "2024-09-20",
-        time: "17:00",
-        location: "Office",
-        description: "Final submission of the project deliverables."
-    },
-    {
-        name: "Team Building Event",
-        date: "2024-09-05",
-        time: "09:00",
-        location: "Central Park",
-        description: "Outdoor activities and team bonding exercises."
+        location: "Remote",
+        description: "Article covering the differences in scholarships, grants, and loans. Including a top 10 list for scholarships for undergraduate women in STEM."
     }
 ];
 
