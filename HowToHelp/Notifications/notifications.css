@@ -80,6 +80,7 @@ header {
 
 .dropdown-content a:hover, .navbar .dropbtn:hover {
     background-color: #E8DEC7;
+    z-index: 1;
 }
 
 .no-dropdown {
