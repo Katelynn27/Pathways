@@ -1,9 +1,9 @@
 // Sample article data (you would typically fetch this from a server)
 const articles = [
     // page 1
-    { title: "Empowering Communities Through Education", image: "FullLogo (1).jpg", excerpt: "Discover how education is transforming lives in underserved areas." },
-    { title: "Sustainable Solutions for a Brighter Future", image: "FullLogo (1).jpg", excerpt: "" },
-    { title: "Bridging the Digital Divide", image: "FullLogo (1).jpg", excerpt: "" },
+    //{ title: "Empowering Communities Through Education", image: "FullLogo (1).jpg", excerpt: "Discover how education is transforming lives in underserved areas." },
+    //{ title: "Sustainable Solutions for a Brighter Future", image: "FullLogo (1).jpg", excerpt: "" },
+    //{ title: "Bridging the Digital Divide", image: "FullLogo (1).jpg", excerpt: "" },
 ];
 
 const articlesPerPage = 7;
