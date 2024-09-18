@@ -4,6 +4,10 @@ body, html {
     font-family: 'Lora', serif;
     background-color: #F4ECDC;
     color: #0B2236;
+    background-image: url('../Tutoring2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Header styles */
@@ -101,11 +105,6 @@ header {
 
 /* Content styles */
 .content {
-    background-image: url("../../Tutoring1.jpg");;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;
