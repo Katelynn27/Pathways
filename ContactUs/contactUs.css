@@ -1,0 +1,131 @@
+/* Global styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4ECDC;
+  color: #0B2236;
+  margin: 0;
+  padding: 0; /* Removed padding to avoid issues */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+header {
+  width: 100%; /* Make sure header takes full width */
+  position: sticky;
+  top: 0;
+  background-color: #F4ECDC;
+  z-index: 1000;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Header text */
+.header-image {
+  float: left;
+}
+
+
+.header-image img {
+  max-height: 150px; /* Adjust as needed */
+  max-width: 100%;   /* Ensure the image scales with the container */
+  display: block;    /* Ensure the image is treated as a block-level element */
+}
+
+
+
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  clear: both; /* Ensure nothing floats around the navbar */
+}
+
+
+/* Dropdown Containers */
+.dropdown {
+  display: inline-block; /* Ensure dropdowns are aligned horizontally */
+  position: relative; /* Position dropdown content relative to the button */
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent; /* Match background */
+  color: #0B2236;
+  padding: 10px 16px; /* Adjust padding for design */
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Aligns button horizontally */
+}
+
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position content directly below the button */
+  left: 0; /* Align content to the left of the button */
+  background-color: #F4ECDC;
+  border: 1px solid #e0d8c9; /* Subtle border */
+  white-space: nowrap; /*makes sure the text does not wrap so dropdown is automatically the length of the longest line */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: #0B2236;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Hover Effects  for drop down links*/
+.dropdown-content a:hover, .navbar .dropbtn:hover {
+  background-color: #E8DEC7; /* Slightly darker on hover */
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.no-dropdown {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent; /* Match background */
+  color: #0B2236; /* Same color as other navbar buttons */
+  padding: 10px 16px; /* Adjust padding for design */
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Aligns button horizontally */
+}
+
+
+.no-dropdown:hover {
+  background-color: #E8DEC7; /* Slightly darker on hover */
+}

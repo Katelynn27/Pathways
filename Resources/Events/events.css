@@ -1,0 +1,233 @@
+/* Global styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4ECDC;
+  color: #0B2236;
+  margin: 0;
+  padding: 0; /* Removed padding to avoid issues */
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%; /* Make sure header takes full width */
+  position: sticky;
+  top: 0;
+  background-color: #F4ECDC;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+/* Header text */
+.header-image {
+  float: left;
+}
+.header-image img {
+  max-height: 150px; /* Adjust as needed */
+  max-width: 100%;   /* Ensure the image scales with the container */
+  display: block;    /* Ensure the image is treated as a block-level element */
+}
+
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  clear: both; /* Ensure nothing floats around the navbar */
+}
+
+/* Dropdown Containers */
+.dropdown {
+  display: inline-block; /* Ensure dropdowns are aligned horizontally */
+  position: relative; /* Position dropdown content relative to the button */
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent; /* Match background */
+  color: #0B2236;
+  padding: 10px 16px; /* Adjust padding for design */
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Aligns button horizontally */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position content directly below the button */
+  left: 0; /* Align content to the left of the button */
+  background-color: #F4ECDC;
+  border: 1px solid #e0d8c9; /* Subtle border */
+  white-space: nowrap; /*makes sure the text does not wrap so dropdown is automatically the length of the longest line */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: #0B2236;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover Effects */
+.dropdown-content a:hover, .navbar .dropbtn:hover {
+  background-color: #E8DEC7; /* Slightly darker on hover */
+}
+
+#calendar-container {
+  background-color: #FCF8F0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 20px; /* Space between header and calendar */
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #0B2236;
+  color: #FCF8F0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1E3D5A;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  border: 1px solid #0B2236;
+  padding: 10px;
+  min-height: 120px;  /* maintains minimum height */
+  height: 120px;      /* set explicit height */
+  max-height: 120px;  /* ensures no growth beyond 120px */
+  position: relative;
+  overflow-y: auto;   /* allows scrolling if events overflow */
+  overflow-x: hidden; /* hides horizontal overflow */
+  width: 100%;        /* ensures days use full width of their grid cell */
+  box-sizing: border-box;  /* includes padding in set height */
+}
+
+.calendar-day-header {
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.calendar-event {
+  background-color: #FF5691;
+  color: #FCF8F0;
+  padding: 2px 5px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;  /* Hide overflow */
+  text-overflow: ellipsis;  /* Show ellipsis for overflowing text */
+  white-space: nowrap;  /* Keep text on single line */
+  width: 95%;   /* Don't quite go edge-to-edge */
+  font-size: 0.8em;  /* Keep font moderately small */
+}
+
+#event-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FCF8F0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  z-index: 100;
+}
+
+
+#event-details-popup {
+  position: fixed;
+  padding: 10px;
+  background-color: rgba(252, 248, 240, 0.95);
+  border: 1px solid #0B2236;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  z-index: 50;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .calendar-day {
+    min-height: 100px;   /* smaller on medium-small screens */
+    height: 100px;
+    max-height: 100px;
+  }
+  .calendar-event {
+    font-size: 0.7em;    /* make events a little smaller */
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-day {
+    min-height: 80px;    /* quite small on mobile */
+    height: 80px;
+    max-height: 80px;
+}
+  .calendar-event {
+    font-size: 0.6em;    /* make events quite small */
+  }
+}
+
+.no-dropdown {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent; /* Match background */
+  color: #0B2236; /* Same color as other navbar buttons */
+  padding: 10px 16px; /* Adjust padding for design */
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Aligns button horizontally */
+}
+
+
+.no-dropdown:hover {
+  background-color: #E8DEC7; /* Slightly darker on hover */
+}

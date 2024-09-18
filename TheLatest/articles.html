@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <a href="home.html" class="Logo">
+                <img src="../Logos/LogoHorizontal.jpg" alt="The Pathway to Possibilities Foundation Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Who We Are</button>
+                <div class="dropdown-content">
+                    <a href="../WhoWeAre/Mission/mission.html">Our Mission</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">The Latest</button>
+                <div class="dropdown-content">
+                    <a href="../TheLatest/articles.html">Articles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">How You Can Help</button>
+                <div class="dropdown-content">
+                    <a href="../HowToHelp/SupplyDrives/supplyDrives.html">Supply Drives</a>
+                    <a href="../HowToHelp/Notifications/notifications.html">Stay Involved</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Resources</button>
+                <div class="dropdown-content">
+                    <a href="../Resources/Events/events.html">Calendar</a>
+                    <a href="../Resources/Learning/learning.html">Learning Modules</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../ContactUs/contactUs.html" class="dropbtn no-dropdown">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Latest Articles</h1>
+        <div class="underline"></div>
+        <div class="article-grid"></div>
+        <div class="pagination">
+            <button id="prevPage" disabled>Previous</button>
+            <button id="nextPage">Next</button>
+        </div>
+    </main>
+
+    <script src="articles.js"></script>
+</body>
+</html>

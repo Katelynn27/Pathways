@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Near You</title>
+        <link rel="stylesheet" type="text/css" href="events.css">
+    </head>
+      <header>
+        <div class="header-image">
+          <a href="../../Home/home.html" class="Logo">
+            <img src="../../Logos/LogoHorizontal_Transparent.png" alt="The Pathway to Possibilities Foundation Logo">
+          </a>
+        </div>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Who We Are
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../../WhoWeAre/Mission/mission.html">Our Mission</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">The Latest
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../../TheLatest/articles.html">Articles</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">How You Can Help
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../../HowToHelp/SupplyDrives/supplyDrives.html">Supply Drives</a>
+                  <a href="../../HowToHelp/Notifications/notifications.html">Stay Involved</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Resources
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../../Resources/Events/events.html">Calendar</a>
+                  <a href="../../Resources/Learning/learning.html">Learning Modules</a>
+                </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../ContactUs/contactUs.html" class="dropbtn no-dropdown">Contact Us</a>
+          </div>
+        </nav>
+    </header>
+    </body>
+        <div id="calendar-container">
+          <div id="calendar-header">
+              <button id="prev-month">&lt;</button>
+              <h2 id="month-year"></h2>
+              <button id="next-month">&gt;</button>
+          </div>
+          <div id="calendar"></div>
+      </div>
+  
+      <div id="event-details-popup" class="hidden"></div>
+      
+      <script src="script.js"></script>
+    </body>
+</html>

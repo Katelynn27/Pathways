@@ -1,0 +1,240 @@
+/* Global styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #F4ECDC;
+  color: #0B2236;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #F4ECDC;
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-image {
+  float: left;
+}
+
+.header-image img {
+  max-height: 150px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  clear: both;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropbtn {
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent;
+  color: #0B2236;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F4ECDC;
+  border: 1px solid #e0d8c9;
+  white-space: nowrap;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #0B2236;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover, .navbar .dropbtn:hover {
+  background-color: #E8DEC7;
+}
+
+.no-dropdown {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 22px;
+  background-color: transparent;
+  color: #0B2236;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.no-dropdown:hover {
+  background-color: #E8DEC7;
+}
+
+/* Main content styles */
+main {
+  padding: 0px 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  color: #0B2236;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.article-thumbnail {
+  background-color: #FCF8F0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.article-thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-thumbnail:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.article-thumbnail img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.article-thumbnail:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.article-thumbnail:first-child img {
+  height: 300px;
+}
+
+.article-info {
+  padding: 15px;
+}
+
+.article-info h3 {
+  margin: 0 0 10px;
+  color: #0B2236;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.article-info h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF5691;
+  transition: width 0.3s ease;
+}
+
+.article-thumbnail:hover .article-info h3 {
+  color: #FF5691;
+}
+
+.article-thumbnail:hover .article-info h3::after {
+  width: 100%;
+}
+
+.article-info p {
+  margin: 0;
+  color: #0B2236;
+  font-size: 14px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination button {
+  background-color: #5F9EA0;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #4F8E90;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: #FF81AA;
+  margin-bottom: 20px;
+}
